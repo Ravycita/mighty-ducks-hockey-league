@@ -1,0 +1,103 @@
+body {
+    background-color:  rgb(255, 255, 255);
+}
+
+nav {
+  position: absolute;
+  margin-top: -510px;
+  margin-left: 1120px;
+}
+
+nav a {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid #000000;
+  padding: 4px 8px 4px 8px;
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.685);
+}
+
+nav a:hover {
+  background-color: rgb(114, 113, 113);
+  color: rgb(255, 252, 252);
+}
+
+.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 85px;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+.banner {
+  margin: 45px 15px 0px 15px;
+  width: 1300px;
+  height: 400px;
+}
+
+.logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -522px;
+    margin-left: 15px;
+}
+
+.logoContact {
+  position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: -532px;
+    margin-left: 15px;
+
+}
+
+.subtitle {
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  margin: 3px 12px 15px 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.sectionIndex {
+    background-color:  rgb(97, 97, 97);
+    margin: -10px 12px 15px 15px;
+    padding: 2px 15px 2px 15px;
+    position: relative;
+    color: aliceblue;
+}
+
+.sectionAbout {
+    background-color:  rgb(97, 97, 97);
+    margin: -10px 12px 15px 15px;
+    padding: 2px 15px 2px 15px;
+    position: relative;
+    color: aliceblue;
+}
+
+
+aside {
+    background-color:  rgb(97, 97, 97);
+    margin: -7px 12px 15px 15px;
+    padding: 5px 15px 2px 15px;
+    position: relative;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+aside a {
+    text-decoration: none;
+}

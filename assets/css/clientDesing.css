@@ -1,0 +1,98 @@
+.title {
+  position: relative;
+  font-size: 55px;
+  font-family: cursive;
+  font-weight: bold;
+  margin-left: 15px;
+  top: 0.5em;
+}
+
+.banner {
+  position: relative;
+  margin: 0px 15px 15px 15px;
+  width: 1300px;
+  height: 400px;
+}
+
+nav {
+  position: absolute;
+  margin-top: -505px;
+  margin-left: 1100px;
+}
+
+nav a {
+  position: relative;
+  background-color: rgb(73, 102, 187);
+  color: white;
+  border: 1px solid #000000;
+  padding: 4px 8px 4px 8px;
+  font-family: cursive;
+  text-decoration: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.603);
+}
+
+nav a:hover {
+  background-color: rgb(20, 150, 25);
+  color: white;
+}
+
+.active {
+  background-color: rgb(83, 190, 87);
+  color: white;
+}
+
+.subtitle {
+  position: relative;
+  text-align: center;
+  border: 1px solid black;
+  margin: 3px 12px 15px 15px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  top: -0.8em;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+}
+
+.sectionIndex {
+    position: relative;
+    margin-left: 300px;
+    margin-top: -260px;
+}
+
+.sectionAbout {
+    position: relative;
+    margin-left: 300px;
+    margin-top: -260px;
+}
+
+
+
+article h2 {
+    font-size: 25px;
+    font-family: cursive;
+}
+
+article p {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+aside {
+  position: relative;
+  margin-left: 300px;
+  margin-top: -240px;
+}
+
+
+aside p {
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+aside a {
+    text-decoration: none;
+}
