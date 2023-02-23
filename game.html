@@ -5,93 +5,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/ownDesing.css" />
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="gameContainer">
-            <img class="logoNav" src="/assets/images/LogoMightyducks-01.png" alt="Mighty Ducks Hockey Team Logo">
-            <h1 class="title">Mighty Ducks Hockey League</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a class="active" href="#">Schedule</a>
-                <a href="rules.html">Rules</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <div class="navbarLogo">
+                    <img src="./assets/images/LogoMightyducks-01.png" alt="Logo de Mighty Ducks Hockey League">
+                </div>
+                <h2 class="navbar-brand">Mighty Ducks Hockey League</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasMDHL">Mighty Ducks Hockey League</h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Schesule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./rules.html">Rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./form.html">Registation form</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="containerSchedule">
+        <div class="containerSchedule container container-fluid">
             <h1>Fall Schedule</h1>
             <p>*All games take place on Saturday.</p>
         </div>
-        <table class="tableGames">
-            <thead>
-                <tr>
-                    <th colspan="2">SEPTEMBER</th>
-                    <th>Teams</th>
-                    <th>Location</th>
-                    <th>Times</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2" colspan="2">9/01</td>
-                    <td>U1 and U4</td>
-                    <td>AJ Katzenmaier</td>
-                    <td>9:30 a.m.</td>
-                </tr>
-                <tr>
-                    <td>U3 and U2</td>
-                    <td>Greenbay</td>
-                    <td>1:00 p.m.</td>
-                </tr>
-                <tr>
-                    <td rowspan="2" colspan="2">9/01</td>
-                    <td>U5 and U6</td>
-                    <td>Howard A Yeager</td>
-                    <td>9:30 a.m.</td>
-                </tr>
-                <tr>
-                    <td>U6 and U1</td>
-                    <td>Marjorie P Heart</td>
-                    <td>1:00 p.m.</td>
-                </tr>
-                <tr>
-                    <td rowspan="2" colspan="2">9/15</td>
-                    <td>U2 and U4</td>
-                    <td>North</td>
-                    <td>9:30 a.m.</td>
-                </tr>
-                <tr>
-                    <td>U3 and U5</td>
-                    <td>AJ Katzenmaier</td>
-                    <td>1:00 p.m.</td>
-                </tr>
-                <tr>
-                    <td rowspan="2" colspan="2">9/22</td>
-                    <td>U1 and U3</td>
-                    <td>South</td>
-                    <td>9:30 a.m.</td>
-                </tr>
-                <tr>
-                    <td>U2 and U6</td>
-                    <td>Howard A Yeager</td>
-                    <td>1:00 p.m.</td>
-                </tr>
-                <tr>
-                    <td colspan="2">9/29</td>
-                    <td>U4 and U5</td>
-                    <td>Greenbay</td>
-                    <td>9:30 a.m.</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="containerFacility">
-            <section>
+        <div class="containerTable container-fluid">
+            <table class="tableGames">
+                <thead>
+                    <tr>
+                        <th colspan="2">SEPTEMBER</th>
+                        <th>Teams</th>
+                        <th>Location</th>
+                        <th>Times</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" colspan="2">9/01</td>
+                        <td data-label="Teams">U1 and U4</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11799.122572613156!2d-87.8628046!3d42.3258772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sar!4v1676913988351!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Teams">U3 and U2</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.3218138602206!2d-87.97148887912705!3d44.48807234901637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e5c920d03d8d%3A0xc984ec52edd1f56a!2sGreen%20Bay%20Academy!5e0!3m2!1ses-419!2sar!4v1676914752732!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="2">9/01</td>
+                        <td data-label="Teams">U5 and U6</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.270062631387!2d-87.85606978454513!3d42.3154382791899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1676914213467!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Teams">U6 and U1</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.289839348977!2d-87.64816138455728!3d41.92962287921805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1ses-419!2sar!4v1676914283264!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Times">1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="2">9/15</td>
+                        <td data-label="Teams">U2 and U4</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9797126202725!2d-82.39738058545841!3d34.85673708235432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885831d0f5ac38e9%3A0x210d8e81adda0900!2sN%20Academy%20St%2C%20Greenville%2C%20SC%2029601%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1676915030557!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Teams">U3 and U5</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11799.122572613156!2d-87.8628046!3d42.3258772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1ses-419!2sar!4v1676913988351!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Times">1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="2">9/22</td>
+                        <td data-label="Teams">U1 and U3</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.383357469732!2d-82.41299298545864!3d34.84659358289954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885831b56f67b943%3A0xe58aafdeac1d0796!2sS%20Academy%20St%2C%20Greenville%2C%20SC%2029601%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1676915095204!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Teams">U2 and U6</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.270062631387!2d-87.85606978454513!3d42.3154382791899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1676914213467!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">1:00 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">9/29</td>
+                        <td data-label="Teams">U4 and U5</td>
+
+                        <td data-label="Location"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.3218138602206!2d-87.97148887912705!3d44.48807234901637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e5c920d03d8d%3A0xc984ec52edd1f56a!2sGreen%20Bay%20Academy!5e0!3m2!1ses-419!2sar!4v1676914752732!5m2!1ses-419!2sar"
+                                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        <td data-label="Time">9:30 a.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <section class="containerFacility container container-fluid">
+            <div >
                 <div class="facilityData">
                     <h3>Facility Type:</h3>
                     <p>Oudoor</p>
@@ -102,10 +173,10 @@
                         conditions.
                     </p>
                 </div>
-            </section>
-        </div>
-        <div class="containerFooter">
-            <footer>
+            </div>
+        </section>
+        <footer class="containerFooter container container-fluid">
+            <div>
                 <div class="containerName">
                     <h3> Please direct all questions to:</h3>
                     <p>Michael Randall, League Coordinator.</p>
@@ -120,9 +191,12 @@
                         <p>michael.randall@chihockey.org</p>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

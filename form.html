@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/ownDesing.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <div class="navbarLogo">
+                    <img src="./assets/images/LogoMightyducks-01.png" alt="Logo de Mighty Ducks Hockey League">
+                </div>
+                <h2 class="navbar-brand">Mighty Ducks Hockey League</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasMDHL">Mighty Ducks Hockey League</h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./game.html">Schesule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./rules.html">Rules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Registation form</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="formTitle">
+            <h1>Registration Form</h1>
+        </div>
+        <section>
+            <form action="./show_data.html" method="get" class="row g-3">
+                <label for="name" class="col-md-2 col-form-label">Player's First Name:</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="firstName" name="First-Name">
+                </div>
+                <label for="lastName" class="col-md-1 col-form-label">Last Name:</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" id="lastName" name="Last-Name">
+                </div>
+                <label for="inputAddress" class="col-md-2 col-form-label">Street Address:</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="address" name="Address" placeholder="1234 Main St">
+                </div>
+                <label for="inputCity" class="col-md-1 col-form-label">City:</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control" id="city" name="City">
+                </div>
+                <label for="inputZip" class="col-md-1 col-form-label">Zip Code:</label>
+                <div class="col-md-5">
+                    <input type="number" class="form-control" id="zip" name="Zip">
+                </div>
+                <label for="birthday" class="col-md-1 col-form-label">Birthday: </label>
+                <div class="col-md-5">
+                    <input type="date" class="form-control" id="birthday" name="Birthday" />
+                </div>
+
+                <label class="col-md-2 form-check-label" for="defaultCheck1">Gender:</label>
+                <div class="col-md-2 form-check">
+                    <input class="form-check-input" type="radio" name="Gender" id="female" value="female">
+                    <label class="form-check-label" for="Female">
+                        Female
+                    </label>
+                </div>
+                <div class="col-md-2  form-check">
+                    <input class="form-check-input" type="radio" name="Gender" id="male" value="male">
+                    <label class="form-check-label" for="Male">
+                        Male
+                    </label>
+                </div>
+                <label class="col-md-1 form-check-label" for="grade">Grade:</label>
+                <div class="col-md-2 form-check">
+                    <label class="form-check-label" for="Pre-School">
+                        Pre-School
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Pre-School" id="Pre-School" name="Grade">
+                </div>
+                <div class="col-md-1  form-check">
+                    <label class="col-md-1 form-check-label" for="1st">
+                        1st
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="1st" id="1st" name="Grade">
+                </div>
+                <div class="col-md-1  form-check">
+                    <label class="col-md-1 form-check-label" for="2st">
+                        2st
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="2st" id="2st" name="Grade">
+                </div>
+                <div class="col-md-1  form-check">
+                    <label class="col-md-1 form-check-label" for="3st">
+                        3st
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="3st" id="3st" name="Grade">
+                </div>
+                <div class="col-md-1  form-check">
+                    <label class="col-md-1 form-check-label" for="defaultCheck1">
+                        4st
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="4st" id="4st" name="Grade">
+                </div>
+                <div class="col-md-1  form-check">
+                    <label class="col-md-1 form-check-label" for="defaultCheck1">
+                        5st
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="5st" id="5st" name="Grade">
+                </div>
+                <div>
+                    <h4>Wich elementary school do you live near?</h4>
+                    <h5 class="school">Closest School:</h5>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="AJ Katzeinmaier" id="ajKatzeinmaier" name="School">
+                    <label class="col-md-2 form-check-label" for="ajKatzeinmaier">
+                        AJ Katzeinmaier
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Marjorie P Heart" id="marjoriePHeart" name="School">
+                    <label class="col-md-2 form-check-label" for="marjoriePHeart">
+                        Marjorie P Heart
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Greenbay" id="greenbay" name="School">
+                    <label class="col-md-2 form-check-label" for="greenbay">
+                        Greenbay
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="North Elementary" id="northElementary" name="School">
+                    <label class="col-md-2 form-check-label" for="northElementary">
+                        North Elementary
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Howard A Yeager" id="howardAYeager" name="School">
+                    <label class="col-md-2 form-check-label" for="howardAYeager">
+                        Howard A Yeager
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="South Elementary" id="southElementary" name="School">
+                    <label class="col-md-2 form-check-label" for="southElementary">
+                        South Elementary
+                    </label>
+                </div>
+                <h4>Wath position(s) do you normally play? (check all that apply)</h4>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Foward" id="foward" name="Position">
+                    <label class="col-md-2 form-check-label" for="foward">
+                        Foward
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Mildfield" id="mildfield" name="Position">
+                    <label class="col-md-2 form-check-label" for="mildfield">
+                        Mildfield
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Defense" id="defense" name="Position">
+                    <label class="col-md-2 form-check-label" for="defense">
+                        Defense
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Goalkeeper" id="goalkeeper" name="Position">
+                    <label class="col-md-2 form-check-label" for="goalkeeper">
+                        Goalkeeper
+                    </label>
+                </div>
+                <h4>Uniform Size:</h4>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Youth Small" id="youthSmall" name="Size">
+                    <label class="col-md-2 form-check-label" for="youthSmall">
+                        Youth Small
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Medium" id="defaultCheck1" name="Size">
+                    <label class="col-md-2 form-check-label" for="defaultCheck1">
+                        Medium
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Youth Medium" id="youthMedium" name="Size">
+                    <label class="col-md-2 form-check-label" for="youthMedium">
+                        Youth Medium
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Large" id="large" name="Size">
+                    <label class="col-md-2 form-check-label" for="large">
+                        Large
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Youth Large" id="youthLarge" name="Size">
+                    <label class="col-md-2 form-check-label" for="youthLarge">
+                        Youth Large
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="Extra-Large" id="extraLarge" name="Size">
+                    <label class="col-md-2 form-check-label" for="extraLarge">
+                        Extra-Large
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="Samll" id="samll" name="Size">
+                    <label class="col-md-2 form-check-label" for="samll">
+                        Samll
+                    </label>
+                </div>
+                <h6>Permission to Play</h6>
+                <p class="formP">
+                    I, the parent or guardian of the minor registrant, agree that the registramt and i will abide by all
+                    the
+                    rules od the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                    associated whit hockey and in consideration of the "League" accepting the registrant for its hockey
+                    programs and activities, I hereby relese, discharde, and/or otherwise indemnify MDHL, their
+                    employees
+                    and associated personnel and volunteers, including the facilities used for practices and games,
+                    against
+                    any claim by or on behalf of the registrant as a result of the resgistrant's participation in the
+                    programand/or being transported to or from MDHL sponsored activities, wich transportation.
+                    By singing below, I here by agree and authorize the above. <br> In addition, by singning below, I
+                    also
+                    acknowledge that I have read the cancellation policy and agree to its terms.
+                </p>
+                <form class="row g-2">
+                    <label for="parentSignature" class="col-md-2 col-form-label">Parent/Guardian Signature:</label>
+                    <div class="col-10">
+                        <input type="text" class="form-control" id="signature" name="signature">
+                    </div>
+                    <label for="date" class="col-md-1 col-form-label">Date:</label>
+                    <div class="col-11">
+                        <input type="number" class="form-control" id="date" name="date">
+                    </div>
+                    <div class="submitbtn">
+                        <button class="btn btn-dark" type="submit">Submit form</button>
+                    </div>
+
+
+                </form>
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

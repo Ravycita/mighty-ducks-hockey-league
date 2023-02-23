@@ -4,18 +4,11 @@
   box-sizing: border-box;
 }
 
-header {
-  display: inline-flexbox;
-  justify-content: center;
-  margin: 5px;
-}
+/* Navbar */
 
-.gameContainer {
+.navbarLogo {
   display: flex;
-  justify-content: space-between;
-}
-
-.logoNav {
+  align-self: flex-start;
   width: 50px;
   height: 50px;
   margin-top: 0px;
@@ -23,35 +16,28 @@ header {
   padding: auto;
 }
 
-nav {
-  display:inline-block;
-  margin-top: 10px;
+.navbar-brand {
+  align-self: flex-end;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
 }
 
-nav a {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  border: 1px solid #000000;
+.offcanvas-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 12px 8px 4px 57px;
+}
+
+.nav-link {
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 4px 8px 4px 8px;
-  font-family: "Times New Roman", Times, serif;
-  text-decoration: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.685);
-}
-
-nav a:hover {
-  background-color: rgb(114, 113, 113);
-  color: rgb(255, 252, 252);
 }
 
 .active {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(158, 158, 158);
   color: rgb(0, 0, 0);
 }
 
-.title {
-  font-family: "Times New Roman", Times, serif;
-  align-self: flex-start;
-}
+/* Banner */
 
 .banner {
   display: flex;
@@ -59,7 +45,13 @@ nav a:hover {
 
 .bannerImg {
   max-width: 100%;
+  border-radius: 10px;
+  margin-top: 70px;
+  opacity: 0.6;
+  background-color: rgb(21, 25, 29);
 }
+
+/* Mains */
 
 main {
   display: flex;
@@ -70,87 +62,195 @@ main {
 .subtitle {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
-  background-color: rgb(0, 0, 0);
+  align-self: center;
   width: 100%;
-  margin: -10px 5px 15px 15px;
-  padding: 5px;
-  color: aliceblue;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(21, 25, 29, 0.945);
+  margin-top: 5px;
+  margin-left: 1px;
 }
 
 .subtitle h1 {
   font-family: "Times New Roman", Times, serif;
-  padding: 5px;
-
-
-}
-
-.sectionIndex {
-  display: block;
-  background-color: rgb(97, 97, 97);
-  width: 100%;
-  margin: -10px 5px 15px 15px;
-  padding: 2px 15px 2px 15px;
   color: aliceblue;
+  padding: 5px;
 }
+
+/*  Index */
+
+.articlesIndex {
+  display: block;
+  align-self: center;
+  width: 100%;
+  background-color: rgb(44, 48, 54);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 1px;
+  padding: 15px;
+}
+
+.articlesIndex h2 {
+  color: rgb(255, 255, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.articlesIndex p {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900) {
+  .articlesIndex h2 {
+    font-size: 23px;
+  }
+
+  .articlesIndex p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 700) {
+  .articlesIndex h2 {
+    font-size: 20px;
+  }
+  
+  .articlesIndex p {
+    font-size: 18px;
+  }
+}
+
+/* About */
 
 .sectionAbout {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(97, 97, 97);
+  display: block;
+  align-self: center;
   width: 100%;
-  margin: -10px 5px 15px 15px;
-  padding: 13px;
-  color: aliceblue;
+  background-color: rgb(44, 48, 54);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 1px;
+  padding: 15px;
 }
 
-.articleAbout h2, p {
+.articleAbout h2 {
+  font-size: 25px;
+  color: aliceblue;
   padding: 10px;
 }
+
+.articleAbout p {
+  font-size: 21px;
+  color: aliceblue;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .articleAbout h2 {
+    font-size: 23px;
+  }
+  
+  .articleAbout p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .articleAbout h2 {
+    font-size: 20px;
+  }
+  
+  .articleAbout p {
+    font-size: 16px;
+  }
+  
+}
+
+/* Contact */
 
 .containerContact {
   display: flex;
   justify-content: center;
-  background-color: rgb(97, 97, 97);
-  margin: -10px 5px 15px 15px;
   width: 100%;
+  background-color: rgb(44, 48, 54);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 1px;
+  padding: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
   color: aliceblue;
-  font-family: "Times New Roman", Times, serif;
+}
+
+.containerContact p {
+  font-size: 20px;
 }
 
 .containerContact a {
-  color: rgb(0, 0, 0);
+  color: rgb(184, 184, 184);
   text-decoration: none;
 }
 
-.containerSchedule {
-  display: block;
-  text-align: center;
-  padding: 30px;
-  width: 100%;
-  margin: 15px -1px 15px 15px;
-  border: 1px solid black;
-  background-color: rgb(0, 0, 0);
-  color: aliceblue;
+@media screen and (max-width: 900px) {
+  .containerContact p {
+    flex-direction: column;
+    font-size: 18px;
+  }
+}
 
+@media screen and (max-width: 800px) {
+  .containerContact p {
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
+
+/* Schedule */
+
+.containerSchedule {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  margin-top: 71px;
+  border: rgb(21, 25, 29);
+  border-radius: 10px;
+  background-color: rgb(21, 25, 29);
+  padding: 15px;
+  color: aliceblue;
 }
 
 .containerSchedule h1 {
+  align-self: center;
   transform: skewX(-20deg);
 }
 
 .containerSchedule p {
-  margin-left: -27px;
+  align-self: center;
   font-size: 20px;
   text-decoration-line: underline;
   transform: skewX(-20deg);
 }
 
+@media screen and (max-width: 600px) {
+  .containerSchedule h1 {
+    font-size: 23px;
+  }
+
+  .containerSchedule p {
+    font-size: 20px;
+  }
+}
+
 .tableGames {
   display: inline-flexbox;
-  margin-bottom: 15px;
+  width: 100%;
   justify-content: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 table,
@@ -165,75 +265,155 @@ section {
   margin: 15px;
 }
 
+@media screen and (max-width: 800px) {
+  .tableGames {
+    font-size: 17px;
+  }
+
+  .tableGames td {
+    font-size: 15px;
+  }
+
+  .tableGames iframe {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tableGames {
+    font-size: 14px;
+  }
+
+  .tableGames td {
+    font-size: 13px;
+  }
+
+  .tableGames iframe {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
 .containerFacility {
-  display: inline-block;
-  background-color: rgb(0, 0, 0);
-  margin: -10px 5px 15px 15px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 100%;
+  height: auto;
+  border: rgb(21, 25, 29);
+  border-radius: 10px;
+  background-color: rgb(21, 25, 29);
+  padding: 15px;
   color: aliceblue;
 }
 
-.facilityData h3, p {
+.facilityData h3,
+p {
   display: inline-block;
   padding: 5px;
+  font-size: 23px;
 }
 
 .facilityData p {
   margin-left: -25px;
+  font-size: 18px;
 }
 
 .addInfo h3,
 p {
   display: inline-block;
   padding: 5px;
+  font-size: 23px;
 }
 
 .addInfo p {
-  margin-left: -25px;
+  /* margin-left: -25px; */
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .containerFacility {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
 }
 
 .containerFooter {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  background-color: rgb(97, 97, 97);
-  margin: -10px 5px 15px 15px;
-  width: 100%;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: rgb(44, 48, 54);
   color: aliceblue;
   font-family: "Times New Roman", Times, serif;
-
 }
 
-footer h3,
-p {
-  display: inline-block;
-  padding: 3px;
+.containerName {
+  display: flex;
+  justify-content: space-between;
   margin: 15px;
+  margin-left: 80px;
 }
 
-footer p {
-  margin: -35px;
+.containerName h3 {
+  font-size: 23px;
+}
+
+.containerName p {
+  margin-top: -1px;
+  font-size: 18px;
 }
 
 .containerFooterInfo {
   display: flex;
-  justify-content: space-betweengit ;
+  justify-content: space-evenly;
 }
 
+.containerFooterInfo h3,
+p {
+  display: inline-block;
+
+  padding: 3px;
+  margin: 15px;
+}
+
+.containerFooterInfo h3 {
+  font-size: 23px;
+}
+
+.containerFooterInfo p {
+  margin: -35px;
+  font-size: 18px;
+}
+
+@media screen and (max-widht: 600px) {
+  .containerFooter {
+    display: block;
+  }
+}
+
+/*  Rules */
 
 section h2,
 p {
   text-indent: 20px;
 }
 
-.titleRules  {
+.titleRules {
   display: block;
+  align-self: center;
   text-align: center;
   width: 100%;
-  margin: 15px -1px 15px 15px;
+  border-radius: 10px;
+  margin-top: 71px;
+  margin-left: 1px;
   padding: 30px;
-  border: 1px solid black;
-  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(21, 25, 29);
+  background-color: rgb(21, 25, 29);
   color: aliceblue;
 }
 
@@ -246,11 +426,13 @@ p {
 
 .containerSport {
   display: block;
+  align-self: center;
   width: 100%;
-  padding: 15px;
-  margin-top: -10px;
-  margin-left: 8px;
-  background-color: rgb(97, 97, 97);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 1px;
+  background-color: rgb(44, 48, 54);
   color: aliceblue;
   font-family: "Times New Roman", Times, serif;
 }
@@ -258,15 +440,20 @@ p {
 .containerAllPlay {
   display: block;
   width: 100%;
+  align-self: center;
+  border-radius: 10px;
   padding: 15px;
   margin-top: -10px;
-  margin-left: 8px;
-  background-color: rgb(97, 97, 97);
+  margin-left: 1px;
+  background-color: rgb(44, 48, 54);
   color: aliceblue;
   font-family: "Times New Roman", Times, serif;
-
 }
-.sectionRules dt, dd {
+
+.sectionRules dt,
+dd {
+  width: 100%;
+  align-self: center;
   padding: 15px;
   margin-left: 6px;
 }
@@ -281,9 +468,80 @@ dt {
   margin: 23px;
 }
 
- li, ul {
+li,
+ul {
   margin-top: 10px;
   margin-left: 15px;
   padding: 10px;
+}
 
+/* Form */
+
+.formTitle {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  background-color: rgb(21, 25, 29);
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-left: 1px;
+  padding: 15px;
+}
+
+.formTitle h1 {
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+form h4,
+h5 {
+  font-size: 23px;
+  padding: 5px;
+}
+
+.school {
+  font-size: 23px;
+}
+
+form p {
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .formP {
+    font-size: 18px;
+  }
+
+  form h4 {
+    font-size: 21px;
+  }
+
+  .school {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  form h4 {
+    font-size: 18px;
+  }
+
+  .school {
+    font-size: 18px;
+  }
+}
+
+.submitbtn {
+  display: flex;
+  justify-content: flex-end;
 }
